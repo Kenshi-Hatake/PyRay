@@ -11,6 +11,17 @@ Pong made with library called PyRay which is a binding of Raylib library
 ```bash
     python -m pip install --upgrade pip
 ```
+## Install Raylib
+#### MAC/LINUX
+```bash
+    python3 -m pip install raylib
+```
+
+#### WINDOWS
+```bash
+    python -m pip install raylib
+```
+
 
 ## Install Pyray
 #### MAC/LINUX
