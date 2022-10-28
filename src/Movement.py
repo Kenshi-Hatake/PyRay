@@ -1,8 +1,7 @@
-from pyray import get_frame_time, play_sound, is_key_down, KeyboardKey
-
-from Ball import * 
-from Sounds import * 
+from Ball import *
 from Paddle import *
+from Sounds import *
+
 
 def moving_ball():
     # BALL MOVING
@@ -19,13 +18,14 @@ def moving_ball():
         ball.y = 0
         ball.speedY *= -1
 
+
 def moving_paddles():
     # MOVING THE LEFT PADDLE
     if is_key_down(KeyboardKey.KEY_W):
         leftPaddle.y -= leftPaddle.speed * get_frame_time()
     if is_key_down(KeyboardKey.KEY_S):
         leftPaddle.y += leftPaddle.speed * get_frame_time()
-        
+
     # MOVING THE RIGHT PADDLE
     if is_key_down(KeyboardKey.KEY_UP):
         rightPaddle.y -= rightPaddle.speed * get_frame_time()

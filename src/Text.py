@@ -1,5 +1,4 @@
-from pyray import draw_text, YELLOW 
-from Constants import * 
+from Constants import *
 
 
 class Text:

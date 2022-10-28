@@ -1,9 +1,7 @@
-from pyray import check_collision_circle_rec, Vector2, play_sound
-
 from Ball import *
-from Paddle import * 
-from Sounds import * 
-from Constants import *
+from Paddle import *
+from Sounds import *
+
 
 def collisions():
     if check_collision_circle_rec(Vector2(ball.x, ball.y), ball.radius, leftPaddle.GetRect()):
