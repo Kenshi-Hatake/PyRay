@@ -5,13 +5,13 @@ from pygame import mixer
 mixer.init()
 init_audio_device()
 
-ballTouchedSound = load_sound(os.path.join("../assets", "touched.wav"))
-ballMissedSound = load_sound(os.path.join("../assets", "missed.wav"))
-ballTouchedWallSound = load_sound(os.path.join("../assets", "wallTouched.wav"))
+ballTouchedSound = load_sound(os.path.join("assets", "touched.wav"))
+ballMissedSound = load_sound(os.path.join("assets", "missed.wav"))
+ballTouchedWallSound = load_sound(os.path.join("assets", "wallTouched.wav"))
 
 playBackgroundMusic = True
 if playBackgroundMusic:
-    mixer.music.load(os.path.join("../assets", "background.mp3"))
+    mixer.music.load(os.path.join("assets", "background.mp3"))
     mixer.music.play(-1, 0, 0)
 
 
