@@ -44,3 +44,7 @@ Pong made with library called PyRay which is a binding of Raylib library
     cd PyRay
     python ./src/main.py
 ```
+
+## Library Link
+ - [Raylib](https://raylib.com)
+ - [PyRay](https://electronstudio.github.io/raylib-python-cffi/)
