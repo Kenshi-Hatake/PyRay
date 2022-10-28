@@ -1,13 +1,15 @@
-from Ball import *
-from Paddle import *
-from Sounds import *
-from Text import *
+from pyray import play_sound, is_key_pressed, KeyboardKey
 
+from Paddle import * 
+from Text import * 
+from Ball import *
+from Sounds import *
+from Constants import *
 
 def state():
     if ball.x < 0:
         play_sound(ballMissedSound)
-        if rightPaddle.lives > 0 >= leftPaddle.lives:
+        if rightPaddle.lives > 0 and leftPaddle.lives <= 0:
             winnerText.text = "Right Player Wins"
             playBackgroundMusic = False
             stop_all_sounds()
@@ -21,9 +23,9 @@ def state():
 
     if ball.x > WIN_WIDTH:
         play_sound(ballMissedSound)
-        if leftPaddle.lives > 0 >= rightPaddle.lives:
+        if leftPaddle.lives > 0 and rightPaddle.lives <= 0:
             winnerText.text = "Left Player Wins"
-            playBackgroundMusic = False
+            playBackgroundMusic = False 
             stop_all_sounds()
         else:
             leftPaddle.wins += 1
@@ -32,7 +34,6 @@ def state():
             ball.y = WIN_HEIGHT / 2
             ball.speedX = BALL_SPEED
             ball.speedY = BALL_SPEED
-
 
 def restart():
     if winnerText.text != "" and is_key_pressed(KeyboardKey.KEY_SPACE):
@@ -43,7 +44,6 @@ def restart():
         ball.speedX = BALL_SPEED
         ball.speedY = BALL_SPEED
         winnerText.text = ""
-
 
 def winner():
     if winnerText.text == "Right Player Wins":

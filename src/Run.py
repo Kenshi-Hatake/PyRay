@@ -1,13 +1,18 @@
-from Collision import *
-from Draw import *
-from Movement import *
-from Window import *
+from pyray import *
 
+from Window import *
+from Sounds import *
+from Movement import * 
+from Collision import *
+from State import *
+from Draw import *
 
 def run():
-    init_window_all()
 
+    init_window_all()
+    
     while not window_should_close():
+
         moving_ball()
         moving_paddles()
         collisions()
@@ -17,6 +22,7 @@ def run():
         Draw()
 
     unload_all_sound()
+
 
     close_audio_device()
     close_window()

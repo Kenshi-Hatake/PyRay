@@ -1,5 +1,9 @@
-from State import *
+from pyray import *
 
+from Ball import *
+from Paddle import *
+from State import *
+from Constants import * 
 
 def Draw():
     begin_drawing()

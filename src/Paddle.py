@@ -1,4 +1,12 @@
-from Constants import *
+from pyray import (
+    Rectangle, 
+    draw_rectangle_rec, 
+    draw_text,
+    get_screen_height,
+    get_screen_height,
+    WHITE
+)
+from Constants import * 
 
 
 class Paddle:
@@ -8,7 +16,7 @@ class Paddle:
         self.speed = PADDLE_SPEED
         self.width = PADDLE_WIDTH
         self.height = PADDLE_HEIGHT
-        self.color = 0
+        self.color = 0 
         self.wins = 0
         self.lives = PADDLE_LIVES
         self.livePosX, self.livePosY = 0, 0
@@ -24,7 +32,6 @@ class Paddle:
         if self.y > get_screen_height() - 50:
             self.y = get_screen_height() - 50
 
-
 leftPaddle = Paddle()
 leftPaddle.x = 50
 leftPaddle.y = WIN_HEIGHT / 2
@@ -36,7 +43,6 @@ rightPaddle.x = WIN_WIDTH - 50
 rightPaddle.y = WIN_HEIGHT / 2
 rightPaddle.color = RIGHT_PADDLE_COLOR
 rightPaddle.livePosX, rightPaddle.livePosY = WIN_WIDTH - 120, 10
-
 
 def draw_paddles():
     leftPaddle.Draw()

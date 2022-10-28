@@ -1,27 +1,28 @@
 from pyray import *
 
-# Game Constants
+#Game Constants
 WIN_WIDTH = 800
 WIN_HEIGHT = 600
 TITLE = "PONG GAME"
 
-# Ball Constants
+#Ball Constants
 BALL_SPEED = 500
 BALL_RADIUS = 5
 BALL_COLOR = WHITE
 
-# Paddle Constants
+#Paddle Constants
 PADDLE_SPEED = 800
 PADDLE_WIDTH = 10
 PADDLE_HEIGHT = 100
 PADDLE_LIVES = 3
 
-# LEFT PADDLE
+#LEFT PADDLE
 LEFT_PADDLE_COLOR = WHITE
-RIGHT_PADDLE_COLOR = WHITE
+RIGHT_PADDLE_COLOR = WHITE 
 
-# Ball Speed When Paddle Touched
+#Ball Speed When Paddle Touched
 PADDLE_BALL_BOOST = -1.1
 
-# FPS
+#FPS
 TOGGLE_FPS = False
+
