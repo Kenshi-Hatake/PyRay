@@ -1,6 +1,15 @@
+
 # PyRay
 Pong made with library called PyRay which is a binding of Raylib library
 
+# Installation
+```bash
+    pip install -r requirements.txt #WINDOWS
+    or
+    pip3 install -r requirements.txt #LINUX/MACOS
+```
+
+# Manual Installation
 ## Upgrade PIP
 #### MAC/LINUX
 ```bash
