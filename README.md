@@ -11,8 +11,6 @@ Pong made with library called PyRay which is a binding of Raylib library
     python -m pip install --upgrade pip
 ```
 <br/>
-<br/>
-<br/>
 
 # Manual Installation
 ## Upgrade PIP
