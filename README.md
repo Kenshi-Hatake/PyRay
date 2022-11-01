@@ -1,13 +1,18 @@
-
 # PyRay
 Pong made with library called PyRay which is a binding of Raylib library
 
 # Installation
+#### MAC/LINUX
 ```bash
-    pip install -r requirements.txt #WINDOWS
-    or
-    pip3 install -r requirements.txt #LINUX/MACOS
+    pip3 install -r requirements.txt 
 ```
+#### WINDOWS
+```bash
+    python -m pip install --upgrade pip
+```
+<br/>
+<br/>
+<br/>
 
 # Manual Installation
 ## Upgrade PIP
@@ -46,10 +51,14 @@ Pong made with library called PyRay which is a binding of Raylib library
 #### MAC/LINUX
 ```bash
     pip3 install pygame
+    or
+    pip3 install pygame --pre # Python version 3.11.0
 ```
 #### WINDOWS
 ```bash
     pip install pygame
+    or
+    pip install pygame --pre # Python version 3.11.0
 ```
 
 ## RUN

@@ -1,3 +1,4 @@
+from Constants import *
 from Collision import *
 from Draw import *
 from Movement import *

@@ -1,3 +1,4 @@
+from Constants import * 
 from Ball import *
 from Paddle import *
 from Sounds import *
@@ -9,7 +10,6 @@ def state():
         play_sound(ballMissedSound)
         if rightPaddle.lives > 0 >= leftPaddle.lives:
             winnerText.text = "Right Player Wins"
-            playBackgroundMusic = False
             stop_all_sounds()
         else:
             rightPaddle.wins += 1
@@ -23,7 +23,6 @@ def state():
         play_sound(ballMissedSound)
         if leftPaddle.lives > 0 >= rightPaddle.lives:
             winnerText.text = "Left Player Wins"
-            playBackgroundMusic = False
             stop_all_sounds()
         else:
             leftPaddle.wins += 1

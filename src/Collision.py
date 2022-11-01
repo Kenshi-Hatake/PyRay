@@ -1,3 +1,4 @@
+from Constants import *
 from Ball import *
 from Paddle import *
 from Sounds import *

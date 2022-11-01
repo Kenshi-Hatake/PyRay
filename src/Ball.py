@@ -1,6 +1,5 @@
 from Constants import *
 
-
 class Ball:
 
     def __init__(self) -> None:

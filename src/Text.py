@@ -1,6 +1,5 @@
 from Constants import *
 
-
 class Text:
 
     def __init__(self) -> None:
