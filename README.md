@@ -8,7 +8,7 @@ Pong made with library called PyRay which is a binding of Raylib library
 ```
 #### WINDOWS
 ```bash
-    python -m pip install --upgrade pip
+    pip install -r requirements.txt 
 ```
 <br/>
 
